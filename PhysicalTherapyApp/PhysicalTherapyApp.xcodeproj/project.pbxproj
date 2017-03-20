@@ -13,6 +13,8 @@
 		4CEF1D7B1E7AEE1E00DD2514 /* PhysicalTherapyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D791E7AEE1E00DD2514 /* PhysicalTherapyApp.xcdatamodeld */; };
 		4CEF1D7D1E7AEE1E00DD2514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D7C1E7AEE1E00DD2514 /* Assets.xcassets */; };
 		4CEF1D801E7AEE1E00DD2514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D7E1E7AEE1E00DD2514 /* LaunchScreen.storyboard */; };
+		4CEF1D8E1E80367900DD2514 /* Exercise-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D8D1E80367900DD2514 /* Exercise-30.png */; };
+		4CEF1D901E80370C00DD2514 /* Clock-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D8F1E80370C00DD2514 /* Clock-30.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4CEF1D7C1E7AEE1E00DD2514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CEF1D7F1E7AEE1E00DD2514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CEF1D811E7AEE1E00DD2514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CEF1D8D1E80367900DD2514 /* Exercise-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Exercise-30.png"; sourceTree = "<group>"; };
+		4CEF1D8F1E80370C00DD2514 /* Clock-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-30.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		4CEF1D711E7AEE1E00DD2514 /* PhysicalTherapyApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CEF1D8D1E80367900DD2514 /* Exercise-30.png */,
+				4CEF1D8F1E80370C00DD2514 /* Clock-30.png */,
 				4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */,
 				4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */,
 				4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */,
@@ -129,6 +135,8 @@
 				4CEF1D801E7AEE1E00DD2514 /* LaunchScreen.storyboard in Resources */,
 				4CEF1D7D1E7AEE1E00DD2514 /* Assets.xcassets in Resources */,
 				4CEF1D781E7AEE1E00DD2514 /* Main.storyboard in Resources */,
+				4CEF1D8E1E80367900DD2514 /* Exercise-30.png in Resources */,
+				4CEF1D901E80370C00DD2514 /* Clock-30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

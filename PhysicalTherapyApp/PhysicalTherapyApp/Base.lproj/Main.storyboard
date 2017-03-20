@@ -43,8 +43,8 @@
                                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="VUZ-ku-y7t"/>
-                                    <tabBarItem systemItem="more" id="asq-fg-F69"/>
+                                    <tabBarItem title="Exercises" image="Exercise-30.png" id="VUZ-ku-y7t"/>
+                                    <tabBarItem title="Schedule" image="Clock-30.png" id="asq-fg-F69"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -67,4 +67,8 @@
             <point key="canvasLocation" x="32.799999999999997" y="72.413793103448285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clock-30.png" width="30" height="30"/>
+        <image name="Exercise-30.png" width="30" height="30"/>
+    </resources>
 </document>
