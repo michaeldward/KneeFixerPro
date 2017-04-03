@@ -14,6 +14,8 @@
 		4C90BC7C1E91F8A60018593C /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC7B1E91F8A60018593C /* Exercises.swift */; };
 		4C90BC7E1E91FBCD0018593C /* ExerciseMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC7D1E91FBCD0018593C /* ExerciseMaster.swift */; };
 		4C90BC841E9200E40018593C /* TDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC831E9200E40018593C /* TDisplayVC.swift */; };
+		4C90BC861E92BACE0018593C /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC851E92BACE0018593C /* ScheduleViewController.swift */; };
+		4C90BC8A1E92C1710018593C /* EDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC891E92C1710018593C /* EDisplayVC.swift */; };
 		4CEF1D731E7AEE1E00DD2514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */; };
 		4CEF1D751E7AEE1E00DD2514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */; };
 		4CEF1D781E7AEE1E00DD2514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		4C90BC7B1E91F8A60018593C /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		4C90BC7D1E91FBCD0018593C /* ExerciseMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMaster.swift; sourceTree = "<group>"; };
 		4C90BC831E9200E40018593C /* TDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDisplayVC.swift; sourceTree = "<group>"; };
+		4C90BC851E92BACE0018593C /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		4C90BC891E92C1710018593C /* EDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDisplayVC.swift; sourceTree = "<group>"; };
 		4CEF1D6F1E7AEE1E00DD2514 /* PhysicalTherapyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicalTherapyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 		4CEF1D661E7AEE1D00DD2514 = {
 			isa = PBXGroup;
 			children = (
+				4C90BC891E92C1710018593C /* EDisplayVC.swift */,
 				4CEF1D711E7AEE1E00DD2514 /* PhysicalTherapyApp */,
 				4CEF1D701E7AEE1E00DD2514 /* Products */,
 			);
@@ -85,6 +90,7 @@
 				4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */,
 				4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */,
 				4C90BC751E91D5460018593C /* TherapistViewController.swift */,
+				4C90BC851E92BACE0018593C /* ScheduleViewController.swift */,
 				4CEF1D7C1E7AEE1E00DD2514 /* Assets.xcassets */,
 				4CEF1D7E1E7AEE1E00DD2514 /* LaunchScreen.storyboard */,
 				4CEF1D811E7AEE1E00DD2514 /* Info.plist */,
@@ -178,7 +184,9 @@
 				4CEF1D7B1E7AEE1E00DD2514 /* PhysicalTherapyApp.xcdatamodeld in Sources */,
 				4C90BC7E1E91FBCD0018593C /* ExerciseMaster.swift in Sources */,
 				4C90BC7C1E91F8A60018593C /* Exercises.swift in Sources */,
+				4C90BC861E92BACE0018593C /* ScheduleViewController.swift in Sources */,
 				4C90BC761E91D5460018593C /* TherapistViewController.swift in Sources */,
+				4C90BC8A1E92C1710018593C /* EDisplayVC.swift in Sources */,
 				4CEF1D731E7AEE1E00DD2514 /* AppDelegate.swift in Sources */,
 				4C90BC841E9200E40018593C /* TDisplayVC.swift in Sources */,
 				4C90BC7A1E91F73E0018593C /* Exercise.swift in Sources */,

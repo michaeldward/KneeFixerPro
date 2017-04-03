@@ -28,6 +28,7 @@ class TDisplayVC: UIViewController {
             exerciseList.exercises[num].used = false
             //switch1.isOn = false
             switch1.setOn(false, animated: true)
+            exerciseList.exercises[num].times = val
         }
         else
         {
@@ -35,6 +36,7 @@ class TDisplayVC: UIViewController {
             exerciseList.exercises[num].used = true
             //switch1.isOn = true
             switch1.setOn(true, animated: true)
+            exerciseList.exercises[num].times = val
         }
         
     }
@@ -44,6 +46,7 @@ class TDisplayVC: UIViewController {
         {
             exerciseList.exercises[num].used = true
             stepper.value = 1
+            exerciseList.exercises[num].times = 1
             lbl.text = "1"
             //ViewController().reloadTable()
             //ViewController().viewTable.reloadData()
@@ -53,6 +56,7 @@ class TDisplayVC: UIViewController {
         {
             exerciseList.exercises[num].used = false
             stepper.value = 0
+            exerciseList.exercises[num].times = 0
             lbl.text = "0"
             //ViewController().reloadTable()
             //ViewController().viewTable.reloadData()

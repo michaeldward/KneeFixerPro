@@ -12,11 +12,13 @@ class Exercise {
     var title: String
     var text: String
     var used: Bool
+    var times: Int
     
     init(title: String, description: String, assigned: Bool) {
         self.title = title
         self.text = description
         self.used = assigned
+        self.times = 0
     }
     
 }

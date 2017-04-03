@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Exercises-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="exerciseView" id="BYZ-38-t0r" customClass="ViewController" customModule="PhysicalTherapyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mmg-EF-hmT">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="CWW-Sn-24H">
@@ -46,10 +46,10 @@
                             <constraint firstItem="Mmg-EF-hmT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Hhd-gQ-41Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mmg-EF-hmT" secondAttribute="trailing" constant="-16" id="OrP-Rm-3pn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mmg-EF-hmT" secondAttribute="bottom" id="QsS-UL-dsu"/>
-                            <constraint firstItem="Mmg-EF-hmT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ggN-eX-xSw"/>
+                            <constraint firstItem="Mmg-EF-hmT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ug5-we-egs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Exercises" image="Exercise-30.png" id="0aU-i4-hFI"/>
+                    <navigationItem key="navigationItem" id="Pwp-yh-1FI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="viewTable" destination="Mmg-EF-hmT" id="kXx-a3-DQJ"/>
@@ -57,12 +57,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.5" y="-22.183098591549296"/>
+            <point key="canvasLocation" x="1786.4000000000001" y="-22.938530734632685"/>
+        </scene>
+        <!--DisplayVC-->
+        <scene sceneID="rfz-TX-0lf">
+            <objects>
+                <viewController storyboardIdentifier="exerciseVCII" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nzw-EL-YCx" customClass="EDisplayVC" customModule="PhysicalTherapyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BGO-HI-gAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="tSr-rL-0ae"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ne0-te-ufF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vzR-qO-c4e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tSr-rL-0ae" firstAttribute="top" secondItem="vzR-qO-c4e" secondAttribute="bottom" id="Raq-Pj-Jy6"/>
+                            <constraint firstItem="vzR-qO-c4e" firstAttribute="leading" secondItem="Ne0-te-ufF" secondAttribute="leadingMargin" constant="-16" id="axZ-8e-vHd"/>
+                            <constraint firstItem="vzR-qO-c4e" firstAttribute="top" secondItem="BGO-HI-gAu" secondAttribute="bottom" constant="-20" id="pAi-6j-mZh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vzR-qO-c4e" secondAttribute="trailing" constant="-16" id="zBp-0b-5PO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="vzR-qO-c4e" id="1Ei-F5-x4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEN-K9-BIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661.5999999999999" y="-36.431784107946029"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="ddY-4t-oRW">
             <objects>
-                <viewController id="yRJ-Gc-rkL" sceneMemberID="viewController">
+                <viewController id="yRJ-Gc-rkL" customClass="ScheduleViewController" customModule="PhysicalTherapyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Bh-lE-01x"/>
                         <viewControllerLayoutGuide type="bottom" id="pcH-Qf-P4z"/>
@@ -70,13 +106,42 @@
                     <view key="view" contentMode="scaleToFill" id="zIi-fE-eP1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bX5-ge-dXu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="HQh-u6-iEP">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HQh-u6-iEP" id="DT4-Ur-6Bx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yRJ-Gc-rkL" id="gAw-ib-xdG"/>
+                                    <outlet property="delegate" destination="yRJ-Gc-rkL" id="0fh-eZ-WM4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bX5-ge-dXu" firstAttribute="leading" secondItem="zIi-fE-eP1" secondAttribute="leadingMargin" constant="-16" id="3N3-QU-AmE"/>
+                            <constraint firstItem="bX5-ge-dXu" firstAttribute="top" secondItem="7Bh-lE-01x" secondAttribute="bottom" id="5gQ-35-1xG"/>
+                            <constraint firstItem="pcH-Qf-P4z" firstAttribute="top" secondItem="bX5-ge-dXu" secondAttribute="bottom" id="gAz-Fm-neE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bX5-ge-dXu" secondAttribute="trailing" constant="-16" id="kY6-cM-muc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="Clock-30.png" id="asq-fg-F69"/>
+                    <connections>
+                        <outlet property="viewTable" destination="bX5-ge-dXu" id="Y6R-cP-7MF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0e7-Gc-Uh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248" y="1413"/>
+            <point key="canvasLocation" x="247.19999999999999" y="1412.7436281859073"/>
         </scene>
         <!--Therapist View Controller-->
         <scene sceneID="5cO-Of-blu">
@@ -212,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7f-uA-K54" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2850.4000000000001" y="440.32983508245883"/>
+            <point key="canvasLocation" x="3789.5999999999999" y="440.32983508245883"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Kvl-Pp-toz">
@@ -224,7 +289,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="50K-xf-4IA"/>
+                        <segue destination="3Kr-66-TyM" kind="relationship" relationship="viewControllers" id="50K-xf-4IA"/>
                         <segue destination="yRJ-Gc-rkL" kind="relationship" relationship="viewControllers" id="ld2-GC-MVc"/>
                         <segue destination="FbI-T8-w8u" kind="relationship" relationship="viewControllers" id="gPf-Mw-9XI"/>
                     </connections>
@@ -251,6 +316,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVr-RH-xRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1197.5999999999999" y="817.24137931034488"/>
+        </scene>
+        <!--Exercises-->
+        <scene sceneID="v7L-7y-53j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Kr-66-TyM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Exercises" image="Exercise-30.png" id="0aU-i4-hFI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bq4-q9-e8H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="T7g-Xb-VXv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5C-Ba-uhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.20000000000005" y="-22.938530734632685"/>
         </scene>
     </scenes>
     <resources>
