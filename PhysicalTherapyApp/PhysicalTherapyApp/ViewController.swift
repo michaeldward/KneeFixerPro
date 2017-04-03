@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("loading")
-        exerciseList.addElement(newElement: Exercise(title: "Knee flexion", description: "flex the knee", assigned: true))
+        exerciseList.addElement(newElement: Exercise(title: "Knee flexion", description: "Initiate sagittal plane plyometrics, work towards single leg plyometrics.Clearance by MD and pass Sportsmetric training before returning to full athletics. NOTE: All progressions are approximations and should be used as a guideline only. Progression will be based on individual patient presentation, which is assessed throughout the treatment process.", assigned: true))
          exerciseList.addElement(newElement: Exercise(title: "ski exercise", description: "have ben use his skiis", assigned: false))
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -26,6 +26,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewTable.reloadData()
     }
     
     func refresh()
@@ -54,7 +59,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            self.viewTable.reloadData() //can't go out of this function for some reason
+            //self.viewTable.reloadData() //can't go out of this function for some reason
         }
     
 }

@@ -10,8 +10,7 @@ import UIKit
 
 class TDisplayVC: UIViewController {
     
-
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     
     @IBOutlet weak var selected: UISwitch!
     
@@ -36,7 +35,7 @@ class TDisplayVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.text = exerciseList.exercises[num].text
+        textView.text = exerciseList.exercises[num].text
         selected.isOn = exerciseList.exercises[num].used
     }
     
