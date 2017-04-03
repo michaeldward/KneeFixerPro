@@ -46,13 +46,12 @@ extension TherapistViewController: UITableViewDataSource {
 extension TherapistViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("HEY DUDE")
         if let exerciseVC = storyboard?.instantiateViewController(withIdentifier: "exerciseVCI") as? TDisplayVC {
-            print("HEY AGAIN BROSKI")
             exerciseVC.title = exerciseList.exercises[indexPath.row].title
-            exerciseVC.txt = exerciseList.exercises[indexPath.row].text
+            exerciseVC.num = indexPath.row
             navigationController?.pushViewController(exerciseVC, animated: true)
         }
+        self.tableView.reloadData()
     }
 }
 

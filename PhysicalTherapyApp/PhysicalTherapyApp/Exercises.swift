@@ -34,6 +34,7 @@ class ExerciseList
     
     func getActiveCount() -> Int
     {
+        print("getting count")
         var count = 0
         for i in exercises
         {

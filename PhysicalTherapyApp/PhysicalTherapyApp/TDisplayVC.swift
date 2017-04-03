@@ -10,14 +10,34 @@ import UIKit
 
 class TDisplayVC: UIViewController {
     
+
     @IBOutlet weak var textField: UITextField!
     
-    var txt = ""
+    @IBOutlet weak var selected: UISwitch!
+    
+    @IBAction func switchAction(_ sender: Any) {
+        if selected.isOn
+        {
+            exerciseList.exercises[num].used = true
+            //ViewController().reloadTable()
+            //ViewController().viewTable.reloadData()
+            //TherapistViewController().tableView.reloadData()
+        }
+        else
+        {
+            exerciseList.exercises[num].used = false
+            //ViewController().reloadTable()
+            //ViewController().viewTable.reloadData()
+        }
+    }
+    
+    var num = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.text = txt
-        // Do any additional setup after loading the view.
+        textField.text = exerciseList.exercises[num].text
+        selected.isOn = exerciseList.exercises[num].used
     }
     
     override func didReceiveMemoryWarning() {
