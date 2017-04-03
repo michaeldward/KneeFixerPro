@@ -163,7 +163,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W6B-b8-nAb">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W6B-b8-nAb">
                                 <rect key="frame" x="181" y="99" width="67" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -171,6 +171,9 @@
                             </textField>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="mdY-6f-3td">
                                 <rect key="frame" x="256" y="98" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepper:" destination="0Jf-lW-Yd6" eventType="valueChanged" id="ZKH-yn-FQD"/>
+                                </connections>
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -200,7 +203,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lbl" destination="W6B-b8-nAb" id="gBa-dR-Lgb"/>
                         <outlet property="selected" destination="fW8-V8-iuR" id="97v-M9-E5Y"/>
+                        <outlet property="stepper" destination="mdY-6f-3td" id="pFp-X0-Ii8"/>
+                        <outlet property="switch1" destination="fW8-V8-iuR" id="4E3-kg-v82"/>
                         <outlet property="textView" destination="lS3-mP-Ttz" id="PFC-p6-xeX"/>
                     </connections>
                 </viewController>

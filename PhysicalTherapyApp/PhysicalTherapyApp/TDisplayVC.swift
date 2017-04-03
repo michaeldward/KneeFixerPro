@@ -14,10 +14,37 @@ class TDisplayVC: UIViewController {
     
     @IBOutlet weak var selected: UISwitch!
     
+    @IBOutlet weak var lbl: UITextField!
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    @IBOutlet weak var switch1: UISwitch!
+    
+    @IBAction func stepper(_ sender: UIStepper) {
+        let val = Int(sender.value)
+        lbl.text = val.description
+        if val == 0
+        {
+            exerciseList.exercises[num].used = false
+            //switch1.isOn = false
+            switch1.setOn(false, animated: true)
+        }
+        else
+        {
+            
+            exerciseList.exercises[num].used = true
+            //switch1.isOn = true
+            switch1.setOn(true, animated: true)
+        }
+        
+    }
+    
     @IBAction func switchAction(_ sender: Any) {
         if selected.isOn
         {
             exerciseList.exercises[num].used = true
+            stepper.value = 1
+            lbl.text = "1"
             //ViewController().reloadTable()
             //ViewController().viewTable.reloadData()
             //TherapistViewController().tableView.reloadData()
@@ -25,6 +52,8 @@ class TDisplayVC: UIViewController {
         else
         {
             exerciseList.exercises[num].used = false
+            stepper.value = 0
+            lbl.text = "0"
             //ViewController().reloadTable()
             //ViewController().viewTable.reloadData()
         }
@@ -37,6 +66,8 @@ class TDisplayVC: UIViewController {
         super.viewDidLoad()
         textView.text = exerciseList.exercises[num].text
         selected.isOn = exerciseList.exercises[num].used
+        lbl.text = "0"
+        stepper.maximumValue = 6
     }
     
     override func didReceiveMemoryWarning() {
