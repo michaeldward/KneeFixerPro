@@ -10,7 +10,9 @@
 		4C90BC731E9182BE0018593C /* TherapistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC711E9182BE0018593C /* TherapistViewCell.swift */; };
 		4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C90BC721E9182BE0018593C /* TherapistViewCell.xib */; };
 		4C90BC761E91D5460018593C /* TherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC751E91D5460018593C /* TherapistViewController.swift */; };
-		4C90BC781E91E96A0018593C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC771E91E96A0018593C /* FavoritesViewController.swift */; };
+		4C90BC7A1E91F73E0018593C /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC791E91F73E0018593C /* Exercise.swift */; };
+		4C90BC7C1E91F8A60018593C /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC7B1E91F8A60018593C /* Exercises.swift */; };
+		4C90BC7E1E91FBCD0018593C /* ExerciseMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC7D1E91FBCD0018593C /* ExerciseMaster.swift */; };
 		4CEF1D731E7AEE1E00DD2514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */; };
 		4CEF1D751E7AEE1E00DD2514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */; };
 		4CEF1D781E7AEE1E00DD2514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */; };
@@ -26,7 +28,9 @@
 		4C90BC711E9182BE0018593C /* TherapistViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewCell.swift; sourceTree = "<group>"; };
 		4C90BC721E9182BE0018593C /* TherapistViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TherapistViewCell.xib; sourceTree = "<group>"; };
 		4C90BC751E91D5460018593C /* TherapistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewController.swift; sourceTree = "<group>"; };
-		4C90BC771E91E96A0018593C /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		4C90BC791E91F73E0018593C /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		4C90BC7B1E91F8A60018593C /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
+		4C90BC7D1E91FBCD0018593C /* ExerciseMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseMaster.swift; sourceTree = "<group>"; };
 		4CEF1D6F1E7AEE1E00DD2514 /* PhysicalTherapyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicalTherapyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +78,10 @@
 				4CEF1D8D1E80367900DD2514 /* Exercise-30.png */,
 				4CEF1D8F1E80370C00DD2514 /* Clock-30.png */,
 				4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */,
+				4C90BC7B1E91F8A60018593C /* Exercises.swift */,
+				4C90BC7D1E91FBCD0018593C /* ExerciseMaster.swift */,
 				4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */,
 				4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */,
-				4C90BC771E91E96A0018593C /* FavoritesViewController.swift */,
 				4C90BC751E91D5460018593C /* TherapistViewController.swift */,
 				4CEF1D7C1E7AEE1E00DD2514 /* Assets.xcassets */,
 				4CEF1D7E1E7AEE1E00DD2514 /* LaunchScreen.storyboard */,
@@ -84,6 +89,7 @@
 				4CEF1D791E7AEE1E00DD2514 /* PhysicalTherapyApp.xcdatamodeld */,
 				4C90BC711E9182BE0018593C /* TherapistViewCell.swift */,
 				4C90BC721E9182BE0018593C /* TherapistViewCell.xib */,
+				4C90BC791E91F73E0018593C /* Exercise.swift */,
 			);
 			path = PhysicalTherapyApp;
 			sourceTree = "<group>";
@@ -167,9 +173,11 @@
 				4CEF1D751E7AEE1E00DD2514 /* ViewController.swift in Sources */,
 				4C90BC731E9182BE0018593C /* TherapistViewCell.swift in Sources */,
 				4CEF1D7B1E7AEE1E00DD2514 /* PhysicalTherapyApp.xcdatamodeld in Sources */,
+				4C90BC7E1E91FBCD0018593C /* ExerciseMaster.swift in Sources */,
+				4C90BC7C1E91F8A60018593C /* Exercises.swift in Sources */,
 				4C90BC761E91D5460018593C /* TherapistViewController.swift in Sources */,
-				4C90BC781E91E96A0018593C /* FavoritesViewController.swift in Sources */,
 				4CEF1D731E7AEE1E00DD2514 /* AppDelegate.swift in Sources */,
+				4C90BC7A1E91F73E0018593C /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
