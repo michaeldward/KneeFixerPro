@@ -10,6 +10,8 @@ import UIKit
 
 class TherapistViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     //let exercises = ["Ben Rider", "Mike Ward", "Seth Richter"]
     //let exercises = ["Knee flexion", "Knee extension", "Heel slides", "Hamstring stretch", "Isometric quadriceps exercise", "Step ups", "Leg lifts", "Shuttle runs", "Figure 8's", "Suicides", "Single-leg balances", "Wobble-board", "Step downs", "Stationary biking", "Half-squat", "Partial-lunges", "Heel raises"]
     
@@ -38,6 +40,19 @@ extension TherapistViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exerciseList.exercises.count
+    }
+}
+
+extension TherapistViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("HEY DUDE")
+        if let exerciseVC = storyboard?.instantiateViewController(withIdentifier: "exerciseVCI") as? TDisplayVC {
+            print("HEY AGAIN BROSKI")
+            exerciseVC.title = exerciseList.exercises[indexPath.row].title
+            exerciseVC.txt = exerciseList.exercises[indexPath.row].text
+            navigationController?.pushViewController(exerciseVC, animated: true)
+        }
     }
 }
 
