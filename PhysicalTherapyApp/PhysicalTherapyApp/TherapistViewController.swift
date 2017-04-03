@@ -3,6 +3,7 @@
 //  PhysicalTherapyApp
 //
 //  Created by Michael Ward on 3/16/17.
+// Consultant Steven Simcox PHD
 //  Copyright © 2017 Michael Ward. All rights reserved.
 //
 
@@ -11,12 +12,10 @@ import UIKit
 class TherapistViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
-    //let exercises = ["Ben Rider", "Mike Ward", "Seth Richter"]
-    //let exercises = ["Knee flexion", "Knee extension", "Heel slides", "Hamstring stretch", "Isometric quadriceps exercise", "Step ups", "Leg lifts", "Shuttle runs", "Figure 8's", "Suicides", "Single-leg balances", "Wobble-board", "Step downs", "Stationary biking", "Half-squat", "Partial-lunges", "Heel raises"]
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Exercise Select"
         // Do any additional setup after loading the view, typically from a nib.
     }
     
