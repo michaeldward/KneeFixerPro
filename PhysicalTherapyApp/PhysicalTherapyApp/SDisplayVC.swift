@@ -13,6 +13,7 @@ class SDisplayVC: UIViewController
     @IBOutlet weak var tableView: UITableView!
     
     var toDo = 0
+    var exercise = 0
     
     override func viewDidLoad()
     {
@@ -62,6 +63,7 @@ extension SDisplayVC: UITableViewDelegate {
             if (toDo > 0)
             {
                  toDo = toDo - 1
+                exerciseList.exercises[exercise].timesLeft = exerciseList.exercises[exercise].timesLeft  - 1
             }
             self.tableView.reloadData()
         }

@@ -17,6 +17,7 @@
 		4C90BC861E92BACE0018593C /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC851E92BACE0018593C /* ScheduleViewController.swift */; };
 		4C90BC8A1E92C1710018593C /* EDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC891E92C1710018593C /* EDisplayVC.swift */; };
 		4C90BC8C1E92C4ED0018593C /* SDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC8B1E92C4ED0018593C /* SDisplayVC.swift */; };
+		4C90BC901E92CF8F0018593C /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C90BC8F1E92CF8F0018593C /* images.xcassets */; };
 		4CEF1D731E7AEE1E00DD2514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */; };
 		4CEF1D751E7AEE1E00DD2514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */; };
 		4CEF1D781E7AEE1E00DD2514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		4C90BC851E92BACE0018593C /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		4C90BC891E92C1710018593C /* EDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDisplayVC.swift; sourceTree = "<group>"; };
 		4C90BC8B1E92C4ED0018593C /* SDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDisplayVC.swift; sourceTree = "<group>"; };
+		4C90BC8F1E92CF8F0018593C /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		4CEF1D6F1E7AEE1E00DD2514 /* PhysicalTherapyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicalTherapyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		4CEF1D661E7AEE1D00DD2514 = {
 			isa = PBXGroup;
 			children = (
+				4C90BC8F1E92CF8F0018593C /* images.xcassets */,
 				4C90BC891E92C1710018593C /* EDisplayVC.swift */,
 				4CEF1D711E7AEE1E00DD2514 /* PhysicalTherapyApp */,
 				4CEF1D701E7AEE1E00DD2514 /* Products */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CEF1D801E7AEE1E00DD2514 /* LaunchScreen.storyboard in Resources */,
+				4C90BC901E92CF8F0018593C /* images.xcassets in Resources */,
 				4CEF1D921E80676200DD2514 /* Doctor-30.png in Resources */,
 				4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */,
 				4CEF1D7D1E7AEE1E00DD2514 /* Assets.xcassets in Resources */,

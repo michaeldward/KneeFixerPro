@@ -61,7 +61,8 @@ extension ScheduleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let scheduleVC = storyboard?.instantiateViewController(withIdentifier: "scheduleVCI") as? SDisplayVC {
             scheduleVC.title = exerciseList.getActive()[indexPath.row].title
-            scheduleVC.toDo = exerciseList.getActive()[indexPath.row].times
+            scheduleVC.toDo = exerciseList.getActive()[indexPath.row].timesLeft
+            scheduleVC.exercise = exerciseList.getActive()[indexPath.row].index
             navigationController?.pushViewController(scheduleVC, animated: true)
         }
     }
