@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C5E9D031E9EC8EE0011890C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */; };
 		4C90BC731E9182BE0018593C /* TherapistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC711E9182BE0018593C /* TherapistViewCell.swift */; };
 		4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C90BC721E9182BE0018593C /* TherapistViewCell.xib */; };
 		4C90BC761E91D5460018593C /* TherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC751E91D5460018593C /* TherapistViewController.swift */; };
@@ -19,6 +18,7 @@
 		4C90BC8A1E92C1710018593C /* EDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC891E92C1710018593C /* EDisplayVC.swift */; };
 		4C90BC8C1E92C4ED0018593C /* SDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC8B1E92C4ED0018593C /* SDisplayVC.swift */; };
 		4C90BC901E92CF8F0018593C /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C90BC8F1E92CF8F0018593C /* images.xcassets */; };
+		4CB9FDD91E9EDFE2003C2758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */; };
 		4CEF1D731E7AEE1E00DD2514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */; };
 		4CEF1D751E7AEE1E00DD2514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */; };
 		4CEF1D781E7AEE1E00DD2514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */; };
@@ -200,7 +200,7 @@
 			files = (
 				4CEF1D801E7AEE1E00DD2514 /* LaunchScreen.storyboard in Resources */,
 				4C90BC901E92CF8F0018593C /* images.xcassets in Resources */,
-				4C5E9D031E9EC8EE0011890C /* GoogleService-Info.plist in Resources */,
+				4CB9FDD91E9EDFE2003C2758 /* GoogleService-Info.plist in Resources */,
 				4CEF1D921E80676200DD2514 /* Doctor-30.png in Resources */,
 				4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */,
 				4CEF1D7D1E7AEE1E00DD2514 /* Assets.xcassets in Resources */,
