@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C5E9D031E9EC8EE0011890C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */; };
 		4C90BC731E9182BE0018593C /* TherapistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC711E9182BE0018593C /* TherapistViewCell.swift */; };
 		4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C90BC721E9182BE0018593C /* TherapistViewCell.xib */; };
 		4C90BC761E91D5460018593C /* TherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC751E91D5460018593C /* TherapistViewController.swift */; };
@@ -27,9 +28,12 @@
 		4CEF1D8E1E80367900DD2514 /* Exercise-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D8D1E80367900DD2514 /* Exercise-30.png */; };
 		4CEF1D901E80370C00DD2514 /* Clock-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D8F1E80370C00DD2514 /* Clock-30.png */; };
 		4CEF1D921E80676200DD2514 /* Doctor-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D911E80676200DD2514 /* Doctor-30.png */; };
+		6B5412CA148AA6E4605646B1 /* Pods_PhysicalTherapyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591B54EC8193459ABC41279B /* Pods_PhysicalTherapyApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		386B8BA597ACD8FE26AACF59 /* Pods-PhysicalTherapyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhysicalTherapyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhysicalTherapyApp/Pods-PhysicalTherapyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C90BC711E9182BE0018593C /* TherapistViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewCell.swift; sourceTree = "<group>"; };
 		4C90BC721E9182BE0018593C /* TherapistViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TherapistViewCell.xib; sourceTree = "<group>"; };
 		4C90BC751E91D5460018593C /* TherapistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		4CEF1D8D1E80367900DD2514 /* Exercise-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Exercise-30.png"; sourceTree = "<group>"; };
 		4CEF1D8F1E80370C00DD2514 /* Clock-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-30.png"; sourceTree = "<group>"; };
 		4CEF1D911E80676200DD2514 /* Doctor-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doctor-30.png"; sourceTree = "<group>"; };
+		591B54EC8193459ABC41279B /* Pods_PhysicalTherapyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhysicalTherapyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B304D507FFB55AD6DB80B582 /* Pods-PhysicalTherapyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhysicalTherapyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhysicalTherapyApp/Pods-PhysicalTherapyApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5412CA148AA6E4605646B1 /* Pods_PhysicalTherapyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,8 @@
 				4C90BC891E92C1710018593C /* EDisplayVC.swift */,
 				4CEF1D711E7AEE1E00DD2514 /* PhysicalTherapyApp */,
 				4CEF1D701E7AEE1E00DD2514 /* Products */,
+				E76BAF659883CF6A5485D221 /* Pods */,
+				E53D681DBC7F3236A27F875C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +114,26 @@
 				4C90BC721E9182BE0018593C /* TherapistViewCell.xib */,
 				4C90BC791E91F73E0018593C /* Exercise.swift */,
 				4C90BC831E9200E40018593C /* TDisplayVC.swift */,
+				4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */,
 			);
 			path = PhysicalTherapyApp;
+			sourceTree = "<group>";
+		};
+		E53D681DBC7F3236A27F875C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				591B54EC8193459ABC41279B /* Pods_PhysicalTherapyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E76BAF659883CF6A5485D221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				386B8BA597ACD8FE26AACF59 /* Pods-PhysicalTherapyApp.debug.xcconfig */,
+				B304D507FFB55AD6DB80B582 /* Pods-PhysicalTherapyApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CEF1D841E7AEE1E00DD2514 /* Build configuration list for PBXNativeTarget "PhysicalTherapyApp" */;
 			buildPhases = (
+				A088C06DECB3621C521AB929 /* [CP] Check Pods Manifest.lock */,
 				4CEF1D6B1E7AEE1D00DD2514 /* Sources */,
 				4CEF1D6C1E7AEE1D00DD2514 /* Frameworks */,
 				4CEF1D6D1E7AEE1D00DD2514 /* Resources */,
+				D422810607CDA208EF4ACE1A /* [CP] Embed Pods Frameworks */,
+				51F16592F29CDF2D372BDB4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +200,7 @@
 			files = (
 				4CEF1D801E7AEE1E00DD2514 /* LaunchScreen.storyboard in Resources */,
 				4C90BC901E92CF8F0018593C /* images.xcassets in Resources */,
+				4C5E9D031E9EC8EE0011890C /* GoogleService-Info.plist in Resources */,
 				4CEF1D921E80676200DD2514 /* Doctor-30.png in Resources */,
 				4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */,
 				4CEF1D7D1E7AEE1E00DD2514 /* Assets.xcassets in Resources */,
@@ -180,6 +211,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51F16592F29CDF2D372BDB4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhysicalTherapyApp/Pods-PhysicalTherapyApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A088C06DECB3621C521AB929 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D422810607CDA208EF4ACE1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhysicalTherapyApp/Pods-PhysicalTherapyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CEF1D6B1E7AEE1D00DD2514 /* Sources */ = {
@@ -318,6 +397,7 @@
 		};
 		4CEF1D851E7AEE1E00DD2514 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386B8BA597ACD8FE26AACF59 /* Pods-PhysicalTherapyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhysicalTherapyApp/Info.plist;
@@ -330,6 +410,7 @@
 		};
 		4CEF1D861E7AEE1E00DD2514 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B304D507FFB55AD6DB80B582 /* Pods-PhysicalTherapyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhysicalTherapyApp/Info.plist;

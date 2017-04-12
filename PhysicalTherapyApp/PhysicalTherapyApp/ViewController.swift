@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Exercise List"
+        self.title = "Exercises"
         exerciseList.addElement(newElement: Exercise(title: "Knee flexion", description: "Initiate sagittal plane plyometrics, work towards single leg plyometrics.Clearance by MD and pass Sportsmetric training before returning to full athletics. NOTE: All progressions are approximations and should be used as a guideline only. Progression will be based on individual patient presentation, which is assessed throughout the treatment process.", assigned: false, index: 0))
         exerciseList.addElement(newElement: Exercise(title: "Knee extension", description: "Rehabilitation for the injured knee begins immediately following ACL injury. The clinical goals for Phase I include restoring full range of motion (ROM) and normal strength and control swelling prior to surgery. Patients are also to completely understand the basic principles of accelerated rehabilitation including full terminal knee extension, early weight bearing, and closed and open chain strengthening. The time needed to accomplish these goals can be as little as 1 week or as long as 2 months, depending on how the knee responds to the initial injury.", assigned: false, index: 1))
         exerciseList.addElement(newElement: Exercise(title: "Heel slides", description: "Sit on the floor with legs outstretched. Slowly bend the knee of your injured leg while sliding your heel/foot across the floor toward you. Slide back into the starting position and repeat 10 times.", assigned: false, index: 2))

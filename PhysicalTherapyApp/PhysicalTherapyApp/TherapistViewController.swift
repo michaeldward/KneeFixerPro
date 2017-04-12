@@ -15,7 +15,7 @@ class TherapistViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Exercise Select"
+        self.title = "Therapist"
         // Do any additional setup after loading the view, typically from a nib.
     }
     

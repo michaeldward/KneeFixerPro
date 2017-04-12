@@ -14,6 +14,7 @@ class ScheduleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Schedule"
         
         // Do any additional setup after loading the view, typically from a nib.
     }
