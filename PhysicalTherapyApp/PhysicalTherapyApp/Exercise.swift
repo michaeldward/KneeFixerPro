@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 class Exercise {
     var title: String
@@ -24,5 +25,14 @@ class Exercise {
         self.timesLeft = 0
         self.index = index
     }
+    
+    /*init(snapshot: FIRDataSnapshot) {
+        key = snapshot.key
+        let snapshotValue = snapshot.value as! [String: AnyObject]
+        name = snapshotValue["name"] as! String
+        addedByUser = snapshotValue["addedByUser"] as! String
+        completed = snapshotValue["completed"] as! Bool
+        ref = snapshot.ref
+    }*/
     
 }

@@ -11,12 +11,15 @@ import Firebase
 
 class ViewController: UIViewController {
     
-   
     
     //let exercises = ["Knee flexion", "Knee extension", "Heel slides", "Hamstring stretch", "Isometric quadriceps exercise", "Step ups", "Leg lifts", "Shuttle runs", "Figure 8's", "Suicides", "Single-leg balances", "Wobble-board", "Step downs", "Stationary biking", "Half-squat", "Partial-lunges", "Heel raises"]
     @IBOutlet weak var viewTable: UITableView!
     
     var ref: FIRDatabaseReference!
+    
+    var snapshot: FIRDataSnapshot!
+    
+    var exercises: [ExerciseNew] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,18 @@ class ViewController: UIViewController {
         exerciseList.addElement(newElement: Exercise(title: "Heel Raises", description: "While standing, place your hand on a counter or back of a chair for balance. Raise up onto your toes and hold for five seconds. Slowly lower your heel to the floor and repeat 10 times.", assigned: false, index: 5))
         //get exercises from Firebase database
         ref = FIRDatabase.database().reference(withPath: "exercises")
-        
+        ref.observe(.value, with: { snapshot in
+            var newExercises: [ExerciseNew] = []
+            
+            for item in snapshot.children
+            {
+                let exerciseItem = ExerciseNew(snapshot: item as! FIRDataSnapshot)
+                newExercises.append(exerciseItem)
+            }
+            self.exercises = newExercises
+            print(self.exercises.count)
+        })
+        viewTable.reloadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -57,18 +71,21 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = exerciseList.getActive()[indexPath.row].title
+        //cell.textLabel?.text = exerciseList.getActive()[indexPath.row].title
+        cell.textLabel?.text = exercises[indexPath.row].title
+        print(exercises[indexPath.row].title)
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exerciseList.getActiveCount()
+        //return exerciseList.getActiveCount()
+        return exercises.count
     }
 
 
 }
 
-extension ViewController: UITableViewDelegate {
+/*extension ViewController: UITableViewDelegate {
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             if let scheduleVC = storyboard?.instantiateViewController(withIdentifier: "exerciseVCII") as? EDisplayVC {
@@ -79,5 +96,5 @@ extension ViewController: UITableViewDelegate {
         }
     
     
-}
+}*/
 

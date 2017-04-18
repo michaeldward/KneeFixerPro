@@ -19,6 +19,7 @@
 		4C90BC8C1E92C4ED0018593C /* SDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC8B1E92C4ED0018593C /* SDisplayVC.swift */; };
 		4C90BC901E92CF8F0018593C /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C90BC8F1E92CF8F0018593C /* images.xcassets */; };
 		4CB9FDD91E9EDFE2003C2758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */; };
+		4CB9FDDB1EA682B0003C2758 /* ExerciseNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB9FDDA1EA682B0003C2758 /* ExerciseNew.swift */; };
 		4CEF1D731E7AEE1E00DD2514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */; };
 		4CEF1D751E7AEE1E00DD2514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */; };
 		4CEF1D781E7AEE1E00DD2514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF1D761E7AEE1E00DD2514 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		4C90BC891E92C1710018593C /* EDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDisplayVC.swift; sourceTree = "<group>"; };
 		4C90BC8B1E92C4ED0018593C /* SDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDisplayVC.swift; sourceTree = "<group>"; };
 		4C90BC8F1E92CF8F0018593C /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		4CB9FDDA1EA682B0003C2758 /* ExerciseNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseNew.swift; sourceTree = "<group>"; };
 		4CEF1D6F1E7AEE1E00DD2514 /* PhysicalTherapyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicalTherapyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEF1D741E7AEE1E00DD2514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				4C90BC711E9182BE0018593C /* TherapistViewCell.swift */,
 				4C90BC721E9182BE0018593C /* TherapistViewCell.xib */,
 				4C90BC791E91F73E0018593C /* Exercise.swift */,
+				4CB9FDDA1EA682B0003C2758 /* ExerciseNew.swift */,
 				4C90BC831E9200E40018593C /* TDisplayVC.swift */,
 				4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */,
 			);
@@ -171,6 +174,7 @@
 				TargetAttributes = {
 					4CEF1D6E1E7AEE1D00DD2514 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z9QSRHMZX5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -269,6 +273,7 @@
 				4C90BC731E9182BE0018593C /* TherapistViewCell.swift in Sources */,
 				4CEF1D7B1E7AEE1E00DD2514 /* PhysicalTherapyApp.xcdatamodeld in Sources */,
 				4C90BC7E1E91FBCD0018593C /* ExerciseMaster.swift in Sources */,
+				4CB9FDDB1EA682B0003C2758 /* ExerciseNew.swift in Sources */,
 				4C90BC7C1E91F8A60018593C /* Exercises.swift in Sources */,
 				4C90BC8C1E92C4ED0018593C /* SDisplayVC.swift in Sources */,
 				4C90BC861E92BACE0018593C /* ScheduleViewController.swift in Sources */,
@@ -400,6 +405,7 @@
 			baseConfigurationReference = 386B8BA597ACD8FE26AACF59 /* Pods-PhysicalTherapyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z9QSRHMZX5;
 				INFOPLIST_FILE = PhysicalTherapyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ward.PhysicalTherapyApp;
@@ -413,6 +419,7 @@
 			baseConfigurationReference = B304D507FFB55AD6DB80B582 /* Pods-PhysicalTherapyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z9QSRHMZX5;
 				INFOPLIST_FILE = PhysicalTherapyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ward.PhysicalTherapyApp;
