@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     
     var snapshot: FIRDataSnapshot!
     
+    @IBAction func refresh(_ sender: Any) {
+        viewTable.reloadData()
+    }
     var exercises: [ExerciseNew] = []
     
     override func viewDidLoad() {
