@@ -11,11 +11,28 @@ import UIKit
 
 class TherapistViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var painSlider: UISlider!
+    
+    @IBOutlet weak var stiffnessSlider: UISlider!
+    
+    @IBOutlet weak var painVal: UILabel!
+    
+    @IBOutlet weak var stiffnessVal: UILabel!
+    
+    @IBAction func painValueChanged(_ sender: UISlider) {
+        var painValue = Int(sender.value)
+        painVal.text = "\(painValue)"
+    }
+    
+    @IBAction func stiffnessValueChanged(_ sender: UISlider) {
+        var currentVal = Int(sender.value)
         
+        stiffnessVal.text = "\(currentVal)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Therapist"
+        self.title = "Checkup"
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -25,32 +42,5 @@ class TherapistViewController: UIViewController {
     }
     
     
-}
-
-
-
-extension TherapistViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = exerciseList.exercises[indexPath.row].title
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exerciseList.exercises.count
-    }
-}
-
-extension TherapistViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let exerciseVC = storyboard?.instantiateViewController(withIdentifier: "exerciseVCI") as? TDisplayVC {
-            exerciseVC.title = exerciseList.exercises[indexPath.row].title
-            exerciseVC.num = indexPath.row
-            navigationController?.pushViewController(exerciseVC, animated: true)
-        }
-        self.tableView.reloadData()
-    }
 }
 

@@ -12,11 +12,17 @@ class EDisplayVC: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var label: UILabel!
+    
     var text = ""
+    var times = ""
+    var done = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var doneStr = String(done)
+        self.label.text = "Done " + doneStr + "/" + times + " times"
         self.textView.text = text
     }
     

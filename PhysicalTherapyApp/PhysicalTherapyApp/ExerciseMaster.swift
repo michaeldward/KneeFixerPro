@@ -9,3 +9,4 @@
 import Foundation
 
 var exerciseList: ExerciseList = ExerciseList()
+var exercises: [ExerciseNew] = []

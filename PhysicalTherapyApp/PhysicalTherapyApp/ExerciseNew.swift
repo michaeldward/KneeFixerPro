@@ -14,9 +14,10 @@ class ExerciseNew {
     //var text: String
     //var used: Bool
     var times: String
-    //var done: String
+    var done: Int
     //var index: Int
     var key: String
+        var description: String
     let ref: FIRDatabaseReference?
     
     /*init(title: String, description: String, assigned: Bool, index: Int) {
@@ -33,7 +34,8 @@ class ExerciseNew {
         let snapshotValue = snapshot.value as! [String: AnyObject]
         title = snapshotValue["exercise"] as! String
         times = snapshotValue["times"] as! String
-        //done = snapshotValue["done"] as! String
+        description = snapshotValue["description"] as! String
+        done = snapshotValue["done"] as! Int
         ref = snapshot.ref
     }
     

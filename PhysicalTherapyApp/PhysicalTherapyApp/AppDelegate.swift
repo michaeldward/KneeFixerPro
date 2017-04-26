@@ -14,10 +14,30 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var ref: FIRDatabaseReference!
+    
+    var snapshot: FIRDataSnapshot!
 
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //FIRApp.configure() //crashes app
+        //get exercises from Firebase database
+        FIRApp.configure()
+        ref = FIRDatabase.database().reference(withPath: "exercises")
+        ref.observe(.value, with: { snapshot in
+            var newExercises: [ExerciseNew] = []
+            
+            for item in snapshot.children
+            {
+                let exerciseItem = ExerciseNew(snapshot: item as! FIRDataSnapshot)
+                newExercises.append(exerciseItem)
+                print("loading item")
+            }
+            exercises = newExercises
+            print(exercises.count)
+        })
         return true
     }
 

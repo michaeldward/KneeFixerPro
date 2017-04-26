@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C70FAA11EA9090200DB5871 /* Checklist-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C70FAA01EA9090200DB5871 /* Checklist-30.png */; };
 		4C90BC731E9182BE0018593C /* TherapistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC711E9182BE0018593C /* TherapistViewCell.swift */; };
 		4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C90BC721E9182BE0018593C /* TherapistViewCell.xib */; };
 		4C90BC761E91D5460018593C /* TherapistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C90BC751E91D5460018593C /* TherapistViewController.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		386B8BA597ACD8FE26AACF59 /* Pods-PhysicalTherapyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhysicalTherapyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhysicalTherapyApp/Pods-PhysicalTherapyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4C5E9D021E9EC8EE0011890C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C70FAA01EA9090200DB5871 /* Checklist-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checklist-30.png"; sourceTree = "<group>"; };
 		4C90BC711E9182BE0018593C /* TherapistViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewCell.swift; sourceTree = "<group>"; };
 		4C90BC721E9182BE0018593C /* TherapistViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TherapistViewCell.xib; sourceTree = "<group>"; };
 		4C90BC751E91D5460018593C /* TherapistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TherapistViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				4CEF1D911E80676200DD2514 /* Doctor-30.png */,
 				4CEF1D8D1E80367900DD2514 /* Exercise-30.png */,
 				4CEF1D8F1E80370C00DD2514 /* Clock-30.png */,
+				4C70FAA01EA9090200DB5871 /* Checklist-30.png */,
 				4CEF1D721E7AEE1E00DD2514 /* AppDelegate.swift */,
 				4C90BC7B1E91F8A60018593C /* Exercises.swift */,
 				4C90BC7D1E91FBCD0018593C /* ExerciseMaster.swift */,
@@ -207,6 +210,7 @@
 				4CB9FDD91E9EDFE2003C2758 /* GoogleService-Info.plist in Resources */,
 				4CEF1D921E80676200DD2514 /* Doctor-30.png in Resources */,
 				4C90BC741E9182BE0018593C /* TherapistViewCell.xib in Resources */,
+				4C70FAA11EA9090200DB5871 /* Checklist-30.png in Resources */,
 				4CEF1D7D1E7AEE1E00DD2514 /* Assets.xcassets in Resources */,
 				4CEF1D781E7AEE1E00DD2514 /* Main.storyboard in Resources */,
 				4CEF1D8E1E80367900DD2514 /* Exercise-30.png in Resources */,
