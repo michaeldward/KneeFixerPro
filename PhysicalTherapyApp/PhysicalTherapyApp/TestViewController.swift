@@ -12,10 +12,10 @@ import UIKit
 class TestViewController : UIViewController
 {
     
-    var items = ["1", "2", "3"]
+    var items = ["Pain", "Stiffness", "Weakness", "Limping", "Walking", "Go Up Stairs", "Gainz", "Jeff", "Dave", "Chris"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Test" //not working
+        self.title = "Checkup"
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,8 +35,8 @@ class TestViewController : UIViewController
 extension TestViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = items[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CheckupTableViewCell
+        cell.nameLabel?.text = items[indexPath.row]
         return cell
     }
     
