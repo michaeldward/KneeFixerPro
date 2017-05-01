@@ -35,9 +35,10 @@ extension ScheduleViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let times = exerciseList.getActive()[indexPath.row].times
+        let intTimes = Int(exercises[indexPath.row].times)
+        let timesToDo = intTimes! - exercises[indexPath.row].done
         var end: String
-        if times == 1
+        if timesToDo == 1
         {
             end = " time per day"
         }
@@ -45,13 +46,13 @@ extension ScheduleViewController: UITableViewDataSource {
         {
             end = " times per day"
         }
-        let txt = exerciseList.getActive()[indexPath.row].title + " " + String(times) + end
+        let txt = exercises[indexPath.row].title + " " + String(timesToDo) + end
         cell.textLabel?.text = txt
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exerciseList.getActiveCount()
+        return exercises.count
     }
     
 }
@@ -61,9 +62,9 @@ extension ScheduleViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let scheduleVC = storyboard?.instantiateViewController(withIdentifier: "scheduleVCI") as? SDisplayVC {
-            scheduleVC.title = exerciseList.getActive()[indexPath.row].title
-            scheduleVC.toDo = exerciseList.getActive()[indexPath.row].timesLeft
-            scheduleVC.exercise = exerciseList.getActive()[indexPath.row].index
+            scheduleVC.title = exercises[indexPath.row].title
+            scheduleVC.toDo = Int(exercises[indexPath.row].times)! - Int(exercises[indexPath.row].done)
+            scheduleVC.exercise = indexPath.row
             navigationController?.pushViewController(scheduleVC, animated: true)
         }
     }

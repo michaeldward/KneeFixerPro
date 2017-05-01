@@ -63,7 +63,7 @@ extension SDisplayVC: UITableViewDelegate {
             if (toDo > 0)
             {
                  toDo = toDo - 1
-                exerciseList.exercises[exercise].timesLeft = exerciseList.exercises[exercise].timesLeft  - 1
+                exercises[exercise].done = exercises[exercise].done + 1
             }
             self.tableView.reloadData()
         }

@@ -12,7 +12,7 @@ import UIKit
 class TestViewController : UIViewController
 {
     
-    var items = ["Pain", "Stiffness", "Weakness", "Limping", "Walking", "Go Up Stairs", "Gainz", "Jeff", "Dave", "Chris"]
+    var items = ["Pain", "Stiffness", "Weakness", "Limping", "Walking", "Go Up Stairs", "Go Down Stairs", "Stand", "Kneel", "Squat"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Checkup"
