@@ -2,6 +2,7 @@
 Application will help therapists perscribe exercises for patients and help to track patients' progress on those exercises.  
 Head over to kneefixerpro.mikethebro.com to assign exercises.  
 
+NOTE: When opening the propject, use the **PhysicalTherapyApp.xcworkspace**. Opening it with the .xcodeproj project file will cause an error during compile.  
 
 Features:  
 1. Exercises tab gives a brief description of each exercise.  
