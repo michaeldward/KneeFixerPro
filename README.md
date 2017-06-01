@@ -1,6 +1,6 @@
 # KneeFixerPro
 Application will help therapists perscribe exercises for patients and help to track patients' progress on those exercises.  
-Exercises can be assigned at http://kneefixerpro.mikethebro.com; code for the website can be found in <a href="https://github.com/mikethebro/KneeFixerPro-Web">this repository</a>.
+Exercises can be assigned <a href="http://kneefixerpro.mikethebro.com">here</a>; code for the website can be found in <a href="https://github.com/mikethebro/KneeFixerPro-Web">this repository</a>.
 
 NOTE: When opening the propject, use the **PhysicalTherapyApp.xcworkspace**. Opening it with the .xcodeproj project file will cause an error during compile.  
 
