@@ -16,7 +16,8 @@ Issues:
 To be added:
 1. Exercise completion will persist even if app is closed.
 2. Video explanation of exercise.
-3. Checkup tab will send data back to website.  
+3. Checkup tab will send data back to website.
+4. Website to assign exercises to be redone (switch from Firebase to Django).  
 
 Eventual goals:
 1. Multiple accounts so each user can have different exercises assigned.
