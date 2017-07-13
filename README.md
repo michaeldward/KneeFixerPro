@@ -4,21 +4,21 @@ Exercises can be assigned <a href="http://kneefixerpro.mikethebro.com">here</a>;
 
 NOTE: When opening the propject, use the **PhysicalTherapyApp.xcworkspace**. Opening it with the .xcodeproj project file will cause an error during compile.  
 
-Features:  
+## Features
 1. Exercises tab gives a brief description of each exercise.  
 2. Schedule tab reminds the user to do exercises and tracks how many times remain.  
 3. Checkup tab keeps track of patients' progress with pain and ability.  
 4. Website (kneefixerpro.mikethebro.com) for assigning exercises.  
 
-Issues:
+## Issues
 1. Exercise tab won't load on start (user must press reload or switch to another tab).  
 
-To be added:
+## Future Improvements
 1. Exercise completion will persist even if app is closed.
 2. Video explanation of exercise.
 3. Checkup tab will send data back to website.
 4. Website to assign exercises to be redone (switch from Firebase to Django).  
 
-Eventual goals:
+## Eventual Goals
 1. Multiple accounts so each user can have different exercises assigned.
 2. Graph of progress shown on website.  
