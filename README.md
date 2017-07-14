@@ -2,7 +2,7 @@
 Application will help therapists perscribe exercises for patients and help to track patients' progress on those exercises.  
 Website backend is currently being redesigned; code for the website can be found in <a href="https://github.com/mikethebro/KneeFixerPro-Web">this repository</a>.
 
-NOTE: When opening the propject, use the **PhysicalTherapyApp.xcworkspace**. Opening it with the .xcodeproj project file will cause an error during compile.  
+NOTE: When opening the project, use the **PhysicalTherapyApp.xcworkspace**. Opening it with the .xcodeproj project file will cause an error during compile.  
 
 ## Features
 1. Exercises tab gives a brief description of each exercise.  
