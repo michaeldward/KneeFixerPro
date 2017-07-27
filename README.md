@@ -8,7 +8,7 @@ NOTE: When opening the project, use the **PhysicalTherapyApp.xcworkspace**. Open
 1. Exercises tab gives a brief description of each exercise.  
 2. Schedule tab reminds the user to do exercises and tracks how many times remain.  
 3. Checkup tab keeps track of patients' progress with pain and ability.  
-4. <a href="http://kneefixerpro.mikethebro.com">Website</a> for assigning exercises (currently down due to redesign).  
+4. <a href="http://kneefixerpro.herokuapp.com">Website</a> for assigning exercises (currently down due to redesign).  
 
 ## Issues
 1. Exercise tab won't load on start (user must press reload or switch to another tab).  
